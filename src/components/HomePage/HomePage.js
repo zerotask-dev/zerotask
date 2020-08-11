@@ -4,7 +4,8 @@
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import logo from '../../images/Asset 4@4x.png';
+
+import smallLogo2 from '../../images/Asset 2.png';
 
 import {
   Button,
@@ -35,14 +36,35 @@ const { MediaContextProvider, Media } = createMedia({
  */
 const HomepageHeading = ({ mobile }) => (
   <Container text>
-    <Image 
-      src={logo}
-      size='large'
-      centered
-      style={{
-        marginBottom: '30px',
-      }}
-    />
+    <Header as='h1' centered style={{
+      marginTop: mobile ? '1.5em' : '3em'
+    }}>
+      <Image
+        src={smallLogo2}
+        style={{
+          width: 'auto', 
+          height: mobile ? '40px' : '80px'
+        }} />
+      <Header.Content
+        style={{
+          fontSize: mobile ? '2em' : '4em',
+          fontWeight: 'normal',
+          color: '#f5f5f5',
+        }}
+      >
+        ZeroTask
+      </Header.Content>
+      <Header.Subheader style={{
+        fontSize: mobile ? '0.5em' : '0.7em',
+        fontWeight: 'normal',
+        marginTop: mobile ? '0.5em' : '1.5em',
+        color: '#f5f5f5',
+      }}>
+        A Collection of Friends Making Things.
+      </Header.Subheader>
+    </Header>
+
+
     <Button primary size='huge' centered>
       Get Started
       <Icon name='right arrow' />
