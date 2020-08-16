@@ -6,7 +6,7 @@ import smallLogo2 from '../../images/Asset 2.png'
 import d_profile from '../../images/D_profile.jpeg'
 import t_profile from '../../images/T_profile.jpg';
 import j_profile from '../../images/j_profile.png';
-import k_profile from '../../images/Kat.JPG'
+//import k_profile from '../../images/Kat.JPG'
 
 import {
   Button,
@@ -16,7 +16,6 @@ import {
   Header,
   Icon,
   Image,
-  List,
   Menu,
   Segment,
   Sidebar,
@@ -31,11 +30,6 @@ const { MediaContextProvider, Media } = createMedia({
     computer: 1024,
   },
 })
-
-function openInNewTab() {
-  var win = window.open('https://covid.travishodge.com', '_blank');
-  win.focus();
-}
 
 /* Heads up!
  * HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled
